@@ -27,16 +27,15 @@ function App() {
         const fetchedUserPlaces = await fetchUserPlaces();
         setUserPlaces(fetchedUserPlaces);
       } catch (error) {
-        setUserPlaces(userPlaces);
         setError({
           message: error.message || 'Failed to fetch user places.',
         });
-        setIsFetching(false);
       }
       setIsFetching(false);
     };
     getUserPlaces();
   }, []);
+
   function handleStartRemovePlace(place) {
     setModalIsOpen(true);
     selectedPlace.current = place;
