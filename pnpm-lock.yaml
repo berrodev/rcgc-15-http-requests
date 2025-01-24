@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      globals:
+        specifier: ^15.14.0
+        version: 15.14.0
       react:
         specifier: ^19.0.0
         version: 19.0.0
@@ -31,7 +34,7 @@ importers:
         specifier: ^7.32.2
         version: 7.37.4(eslint@8.57.1)
       eslint-plugin-react-hooks:
-        specifier: ^4.6.0
+        specifier: ^4.6.2
         version: 4.6.2(eslint@8.57.1)
       eslint-plugin-react-refresh:
         specifier: ^0.4.3
@@ -681,6 +684,10 @@ packages:
   globals@13.24.0:
     resolution: {integrity: sha512-AhO5QUcj8llrbG09iWhPU2B204J1xnPeL8kQmVorSsy+Sjj1sk8gIyh6cUocGmH4L0UuhAJy+hJMRA4mgA4mFQ==}
     engines: {node: '>=8'}
+
+  globals@15.14.0:
+    resolution: {integrity: sha512-OkToC372DtlQeje9/zHIo5CT8lRP/FUgEOKBEhU4e0abL7J7CD24fD9ohiLN5hagG/kWCYj4K5oaxxtj2Z0Dig==}
+    engines: {node: '>=18'}
 
   globalthis@1.0.4:
     resolution: {integrity: sha512-DpLKbNU4WylpxJykQujfCcwYWiV/Jhm50Goo0wrVILAv5jOr9d+H+UR3PhSCD2rCCEIg0uc+G+muBTwD54JhDQ==}
@@ -2058,6 +2065,8 @@ snapshots:
   globals@13.24.0:
     dependencies:
       type-fest: 0.20.2
+
+  globals@15.14.0: {}
 
   globalthis@1.0.4:
     dependencies:
